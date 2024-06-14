@@ -20,15 +20,11 @@ def main():
         }
 
         categorical_cols = [
-            "Product Type (CFPB)",
-            "Subproduct Type (CFPB)",
-            "Issue type (CFPB)",
             "Complaint Source",
             "Legal Action",
             "Resolution Status",
             "Potential UDAAP Complaint",
             "Potential CFPB Complaint",
-            "Potential Bank Complaint",
             "Reg Z",
             "ECOA",
             "Issue Types (Aven)",
