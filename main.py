@@ -31,7 +31,7 @@ def main():
             "Potential Bank Complaint",
             "Reg Z",
             "ECOA",
-            "Issue Types (Aven)
+            "Issue Types (Aven)",
         ]
 
         categorical_summary = {
