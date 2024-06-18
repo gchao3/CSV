@@ -46,7 +46,7 @@ def main():
         st.subheader("Generated Analysis")
         st.write(message_content)
 
-         st.header("Ask Anything About the CSV")
+        st.header("Ask Anything About the CSV")
         user_question = st.text_input("You can ask it to summarize it in a specific format or ask specifics like how many instance of udaap issues you found.")
         if user_question: 
              message_text = [{
