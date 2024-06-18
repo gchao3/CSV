@@ -49,24 +49,24 @@ def main():
         st.header("Ask Anything About the CSV")
         user_question = st.text_input("Example: You can ask it to summarize the results in a specific format or ask how many instances of udaap issues you found.")
         if user_question: 
-             message_text = [{
+             message_text2 = [{
              "role":"system",
              "content":f"{user_question} Data summary <{categorical_summary}> "}]
 
-        completion = client.chat.completions.create(
-        model="rally-gpt-4", # model = "deployment_name"
-        messages = message_text,
-        temperature=0.7,
-        max_tokens=2000,
-        top_p=0.95,
-        frequency_penalty=0,
-        presence_penalty=0,
-        stop=None
-        )
+             completion2 = client.chat.completions.create(
+             model="rally-gpt-4", # model = "deployment_name"
+             messages = message_text2,
+             temperature=0.7,
+             max_tokens=2000,
+             top_p=0.95,
+             frequency_penalty=0,
+             presence_penalty=0,
+             stop=None
+             )
 
-        message_content = completion.choices[0].message.content
-        st.subheader('Question Response')
-        st.write(message_content)
+             message_content2 = completion2.choices[0].message.content
+             st.subheader('Question Response')
+             st.write(message_content2)
 
     print("Streamlit app is running...")
 
