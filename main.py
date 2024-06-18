@@ -47,7 +47,7 @@ def main():
         st.write(message_content)
 
         st.header("Ask Anything About the CSV")
-        user_question = st.text_input("You can ask it to summarize it in a specific format or ask specifics like how many instance of udaap issues you found.")
+        user_question = st.text_input("Example: You can ask it to summarize the results in a specific format or ask how many instances of udaap issues you found.")
         if user_question: 
              message_text = [{
              "role":"system",
